@@ -11,7 +11,7 @@ RUN apk --no-cache add git build-base
 ENV GO111MODULE=on \
     CGO_ENABLED=0
 
-ARG VERSION=f2339a72445ec1e0b5e5c49d3e0b42a6b6930a33
+ARG VERSION=b849def673f5047eba318d42f10d65fbb6b69ab5
 RUN git clone https://github.com/cloudflare/cloudflared .
 RUN git checkout ${VERSION}
 ARG TARGETOS
